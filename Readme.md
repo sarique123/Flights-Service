@@ -31,6 +31,8 @@ Lets take a look inside the `src` folder
 ### Setup the Project 
 
 - Download this template from github and and open it in your favourite text editor.
+
+- Go 
 - In the root directory,create a `.env` file and add the following env variables
   
   ```
@@ -41,36 +43,23 @@ Lets take a look inside the `src` folder
       PORT = 3000
   ```
 
-  - Inside a `src/config` folder create a file named as `config.json`
-  and write the following code
+  - Go inside the `src` folder and execute the following cammand: 
+  - Go inside the folder path and execute the following command : 
+     npm install
 
   ```
-  {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-```
+  npx sequelize init
+
+  ```
+
+- By executeing the above command you will get migrations and seeders in the `src` folder
+ with a config.json file inside the config folder.
 
  - If you are setting up your development environment, then write the username of your DB, password of your DB,
  and in dialect mention whatever DB you are using. for example : mysql, mariadb etc.
 
  - If you are setting up test or produuction environment, make sure you also replace the host with the hosted DB URL.
+ - To run the server 
+ ```
+ npm run dev
+ ```

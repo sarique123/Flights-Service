@@ -32,7 +32,10 @@ Lets take a look inside the `src` folder
 
 - Download this template from github and and open it in your favourite text editor.
 
-- Go 
+- Go inside the folder path and execute the following command :
+```
+    npm install
+```
 - In the root directory,create a `.env` file and add the following env variables
   
   ```
